@@ -1,4 +1,4 @@
-package Problem.shkisme.Chapter1;
+package Problem.stopmin.Chapter1;
 
 public class HelloWorld {
 

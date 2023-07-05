@@ -1,8 +1,7 @@
-package Problem.kimminjun.Chapter1;
+package Problem.sunny.Chapter1;
 
 public class HelloWorld {
 
-  // TODO: Hello World 출력하기
   public static void main(String[] args) {
     System.out.println("Hello World!");
   }

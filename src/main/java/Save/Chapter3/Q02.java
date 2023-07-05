@@ -8,6 +8,5 @@ public class Q02 {
   public static void main(String[] args) {
     int num = 13;
 
-    // TODO: num이 홀수라면 odd를, 짝수라면 even을 출력하기
   }
 }

@@ -9,5 +9,6 @@ public class Q04 {
     String personNumber = "881120-1068234";
 
     // TODO: 주민등록번호에서 성별을 나타내는 숫자(뒷자리의 맨 첫번째 숫자)를 출력하기
+    System.out.println(personNumber.substring(7, personNumber.length()).charAt(0));
   }
 }

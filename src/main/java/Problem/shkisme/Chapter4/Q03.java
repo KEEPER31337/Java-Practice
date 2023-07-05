@@ -13,5 +13,9 @@ public class Q03 {
     //***
     //****
     //*****
+
+    for (int i = 1; i < 6; i++) {
+      System.out.println("*".repeat(i));
+    }
   }
 }

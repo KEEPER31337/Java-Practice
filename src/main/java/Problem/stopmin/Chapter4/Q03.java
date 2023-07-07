@@ -13,5 +13,13 @@ public class Q03 {
     //***
     //****
     //*****
+    int num = 1;
+    while (num <= 5) {
+      for (int i = 0; i < num; i++) {
+        System.out.print("*");
+      }
+      System.out.print("\n");
+      num++;
+    }
   }
 }

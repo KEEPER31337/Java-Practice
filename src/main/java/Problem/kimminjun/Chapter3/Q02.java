@@ -7,7 +7,8 @@ public class Q02 {
    */
   public static void main(String[] args) {
     int num = 13;
-
+    String odd_even = ((num % 2) == 0) ? "even" : "odd";
+    System.out.println(odd_even);
     // TODO: num이 홀수라면 odd를, 짝수라면 even을 출력하기
   }
 }

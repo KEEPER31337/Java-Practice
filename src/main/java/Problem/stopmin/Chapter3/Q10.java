@@ -12,8 +12,13 @@ public class Q10 {
     priceMap.put(1, 3000);  // 1: 아메리카노
     priceMap.put(2, 4000);  // 2: 아이스 아메리카노
     priceMap.put(3, 5000);  // 3: 카페라떼
-    int price = priceMap.get(type);
-    System.out.println(String.format("가격은 %d원 입니다.", price));
+    Integer price = priceMap.get(type);
+
+    if (price != null) {
+      System.out.println(String.format("가격은 %d원 입니다.", price));
+    } else {
+      System.out.println("해당하는 커피 종류가 없습니다.");
+    }
   }
 
   public static void main(String[] args) {

@@ -2,6 +2,8 @@ package Problem.stopmin.Chapter3;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Q06 {
 
@@ -13,5 +15,7 @@ public class Q06 {
     System.out.println(myList); // [1, 3, 5, 4, 2]가 출력됨.
 
     // TODO: 리스트를 [5, 4, 3, 2, 1]로 만들어서 출력하기
+    Collections.sort(myList, Collections.reverseOrder());
+    System.out.println(myList);
   }
 }

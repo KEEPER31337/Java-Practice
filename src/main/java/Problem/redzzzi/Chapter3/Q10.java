@@ -4,7 +4,7 @@ package Problem.redzzzi.Chapter3;
 
 import java.util.HashMap;
 
-public class Q10_re {
+public class Q10 {
 
   enum CoffeeType {
     AMERICANO,

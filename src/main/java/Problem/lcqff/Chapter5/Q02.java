@@ -2,6 +2,25 @@ package Problem.lcqff.Chapter5;
 
 public class Q02 {
 
+  public class MaxLimitCalculator extends Calculator {
+    public MaxLimitCalculator() {
+      super();
+    }
+
+    void add(int num) {
+      if (value>100)
+        value += num;
+      else System.out.println("100 넘으면 안됨!!");
+    }
+
+    public void main(String[] args) {
+      MaxLimitCalculator cal = new MaxLimitCalculator();
+      cal.add(50);
+      cal.add(60);
+      System.out.println(cal.getValue());
+    }
+  }
+
   /**
    * MaxLimitCalculator
    */
@@ -17,3 +36,6 @@ public class Q02 {
      * */
   }
 }
+
+
+

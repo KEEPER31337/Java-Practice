@@ -5,6 +5,23 @@ public class Q01 {
   /**
    * UpgradeCalculator
    */
+  public class UpgradeCalculator extends Calculator {
+
+    public UpgradeCalculator() {
+      super();
+    }
+    void minus(int num) {
+      this.value -= num;
+    }
+
+    public void main(String[] args) {
+      UpgradeCalculator cal = new UpgradeCalculator();
+      cal.add(10);
+      cal.minus(3);
+      System.out.println(cal.getValue());
+    }
+  }
+
   public static void main(String[] args) {
     Calculator cal = new Calculator();
     cal.add(10);
@@ -20,3 +37,4 @@ public class Q01 {
      */
   }
 }
+

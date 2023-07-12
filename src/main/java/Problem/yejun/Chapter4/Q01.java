@@ -19,6 +19,6 @@ public class Q01 {
       System.out.println("none");
     }
 
-    // TODO: 코드의 출력 결과가 무엇일지 생각해보기
+    // everywhere
   }
 }

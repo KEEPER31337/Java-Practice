@@ -1,4 +1,4 @@
-package Practice.stopmin;
+package Practice.stopmin.Chapter5;
 
 class Calculator {
 

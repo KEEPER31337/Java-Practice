@@ -1,4 +1,4 @@
-package Practice.stopmin;
+package Practice.stopmin.Chapter3;
 
 public enum Coffeetype {
   AMERICANO,

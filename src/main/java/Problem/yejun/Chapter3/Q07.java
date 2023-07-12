@@ -12,6 +12,7 @@ public class Q07 {
     ArrayList<String> myList = new ArrayList<>(Arrays.asList("Life", "is", "too", "short"));
     System.out.println(myList); // [Life, is, too, short] 출력됨.
 
-    // TODO: 리스트를 "Life is too short" 문자열로 만들어 출력해 보자.
+    String str = String.join(" ", myList);
+    System.out.println(str);
   }
 }

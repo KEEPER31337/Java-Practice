@@ -11,5 +11,6 @@ public class Q01 {
     int math = 55;
 
     // TODO: 평균 점수를 구해서 출력하기
+    System.out.println((korean + english + math) / 3);
   }
 }

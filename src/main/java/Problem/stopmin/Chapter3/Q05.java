@@ -9,5 +9,7 @@ public class Q05 {
     String a = "a:b:c:d";
 
     // TODO: replace 함수를 사용하여 a#b#c#d로 바꿔서 출력해 보자.
+    a = a.replaceAll(":", "#");
+    System.out.println(a);
   }
 }

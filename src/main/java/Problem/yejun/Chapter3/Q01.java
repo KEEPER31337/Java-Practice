@@ -10,6 +10,7 @@ public class Q01 {
     int english = 75;
     int math = 55;
 
-    // TODO: 평균 점수를 구해서 출력하기
+    double score = (korean + english + math) / 3.0;
+    System.out.println(score);
   }
 }

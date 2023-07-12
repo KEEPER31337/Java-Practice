@@ -2,6 +2,7 @@ package Problem.kimminjun.Chapter3;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class Q09 {
 
@@ -13,5 +14,7 @@ public class Q09 {
     System.out.println(numbers);  // [1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 5] 출력됨.
 
     // TODO: numbers 리스트에서 중복 숫자를 제거해 보자.
+    HashSet<Integer> numbers_set = new HashSet<>(numbers);
+    System.out.println(numbers_set);
   }
 }

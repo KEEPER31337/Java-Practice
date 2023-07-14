@@ -1,5 +1,8 @@
 package Problem.kimminjun.Chapter5;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Q04 {
 
   /**
@@ -23,5 +26,17 @@ public class Q04 {
      * int result = cal.avg(data);
      * System.out.println(result);  // 5 출력
      */
+
+    int[] data = {1, 3, 5, 7, 9};
+    Calculator cal = new Calculator();
+    int result = cal.avg(data);
+    System.out.println(result);
+
+    ArrayList<Integer> data1 = new ArrayList<>(Arrays.asList(1, 3, 5, 7, 9));
+    Calculator cal1 = new Calculator();
+    int result1 = cal1.avg(data1);
+    System.out.println(result1);
+
+
   }
 }

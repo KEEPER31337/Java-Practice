@@ -12,5 +12,8 @@ public class Q08 {
     //  Animal c = new Lion();  // 3번
     //  Dog d = new Animal();  // 4번
     //  Predator e = new Lion();  // 5번
+
+    // 답
+    //  4번 문장 -> 부모객체는 자식객체에 담을 수 없다
   }
 }

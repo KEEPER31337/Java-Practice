@@ -5,6 +5,10 @@ package Problem.sunny.Chapter5.Q7;
  * 기능(add 메스드)이 있다.
  */
 
-class Gold {
+class Gold implements Mineral {
 
+  @Override
+  public int mineralValue() {
+    return 100;
+  }
 }

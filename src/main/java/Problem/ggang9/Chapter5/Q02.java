@@ -1,5 +1,18 @@
 package Problem.ggang9.Chapter5;
 
+class MaxLimitCalculator extends Calculator {
+  public MaxLimitCalculator() {
+
+  }
+
+  public void add(int val) {
+    this.value += val;
+    if (this.value >= 100) {
+      this.value = 100;
+    }
+  }
+}
+
 public class Q02 {
 
   /**
@@ -15,5 +28,9 @@ public class Q02 {
      * cal.add(60);  // 60 더하기
      * System.out.println(cal.getValue());  // 100 출력
      * */
+    MaxLimitCalculator maxLimitCalculator = new MaxLimitCalculator();
+    maxLimitCalculator.add(50);
+    maxLimitCalculator.add(60);
+    System.out.println("maxLimitCalculator = " + maxLimitCalculator.getValue());
   }
 }

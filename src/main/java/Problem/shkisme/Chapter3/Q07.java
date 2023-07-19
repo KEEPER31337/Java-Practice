@@ -13,5 +13,10 @@ public class Q07 {
     System.out.println(myList); // [Life, is, too, short] 출력됨.
 
     // TODO: 리스트를 "Life is too short" 문자열로 만들어 출력해 보자.
+    String result = "";
+    for (String string : myList) {
+      result += string + " ";
+    }
+    System.out.println(result);
   }
 }

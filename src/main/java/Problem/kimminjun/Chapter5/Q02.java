@@ -15,5 +15,10 @@ public class Q02 {
      * cal.add(60);  // 60 더하기
      * System.out.println(cal.getValue());  // 100 출력
      * */
+
+    MaxLimitCalculator cal = new MaxLimitCalculator();
+    cal.add(50);  // 50 더하기
+    cal.add(60);  // 60 더하기
+    System.out.println(cal.getValue());  // 100 출력
   }
 }

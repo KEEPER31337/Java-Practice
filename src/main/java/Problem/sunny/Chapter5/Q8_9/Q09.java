@@ -16,5 +16,10 @@ public class Q09 {
     //  System.out.println(b.bark());   // 4번
     //  System.out.println(c.hello());  // 5번
     //  System.out.println(c.bark());   // 6번
+
+    // 답
+    // 2번 : Lion 객체에는 bark가 있지만 Animal 객체에는 bark라는 함수가 존재하지 않는다
+    //       따라서 사용할 수 없다
+    // 5번 : Predator 인터페이스에는 hello 함수가 없기 때문에 사용할 수 없다
   }
 }

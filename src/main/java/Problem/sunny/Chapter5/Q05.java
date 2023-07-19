@@ -15,5 +15,9 @@ public class Q05 {
     ArrayList<Integer> b = a;
     a.add(4);
     System.out.println(b.size());
+
+    // 4 -> b = a가 값을 복사하는 것이 아니라 a 객체 자체를 b에 assign하는 것이라면
+    // a에 element를 추가하면 b에도 추가된다
+
   }
 }

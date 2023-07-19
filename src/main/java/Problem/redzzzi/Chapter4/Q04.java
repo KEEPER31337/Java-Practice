@@ -1,11 +1,12 @@
 package Problem.redzzzi.Chapter4;
 
+// 1부터 100까지 출력해보자!
 public class Q04 {
 
-  /**
-   * 1부터 100까지 출력하기
-   */
   public static void main(String[] args) {
-    // TODO: for문을 사용해 1부터 100까지의 숫자를 출력해 보자.
+    for (int num = 1; num <= 100; num++) {
+      System.out.println(num);
+    }
   }
+
 }

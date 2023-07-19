@@ -1,13 +1,15 @@
 package Problem.redzzzi.Chapter4;
 
+// 평균 구하기
 public class Q05 {
 
-  /**
-   * 평균점수 구하기
-   */
   public static void main(String[] args) {
     int[] marks = {70, 60, 55, 75, 95, 90, 80, 80, 85, 100};
-
-    // TODO: for each 문을 사용하여 A 학급의 평균 점수를 구해 보자.
+    int total = 0;
+    for (int mark : marks) {
+      total += mark;
+    }
+    System.out.println(total / marks.length);
   }
+
 }

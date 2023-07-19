@@ -1,5 +1,7 @@
 package Problem.ggang9.Chapter5;
 
+
+
 public class Q03 {
 
   /**
@@ -12,5 +14,8 @@ public class Q03 {
      * System.out.println(cal.isOdd(3));  // 3은 홀수이므로 true 출력
      * System.out.println(cal.isOdd(4));  // 4는 짝수이므로 false 출력
      */
+    Calculator calculator = new Calculator();
+    System.out.println("calculator = " + calculator.isOdd(3));
+    System.out.println("calculator = " + calculator.isOdd(4));
   }
 }

@@ -11,10 +11,12 @@ public class Q09 {
     Predator c = new Lion();
 
     //  System.out.println(a.hello());  // 1번
-    //  System.out.println(a.bark());   // 2번
+    //  System.out.println(a.bark());   // 2번 -> Animal은 인터페이스 구현체가 아니라서 안됨
     //  System.out.println(b.hello());  // 3번
     //  System.out.println(b.bark());   // 4번
-    //  System.out.println(c.hello());  // 5번
+    //  System.out.println(c.hello());  // 5번 -> 이 인터페이스의 메서드에 hello는 없음
     //  System.out.println(c.bark());   // 6번
+
+
   }
 }

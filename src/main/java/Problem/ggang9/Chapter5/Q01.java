@@ -1,5 +1,18 @@
 package Problem.ggang9.Chapter5;
 
+class UpgradeCalculator extends Calculator {
+  public UpgradeCalculator() {
+
+  }
+
+  public void minus(int val) {
+    this.value -= val;
+
+  }
+
+
+}
+
 public class Q01 {
 
   /**
@@ -18,5 +31,10 @@ public class Q01 {
      * cal.minus(3);
      * System.out.println(cal.getValue());  // 10에서 3을 뺀 7을 출력
      */
+
+     UpgradeCalculator cal1 = new UpgradeCalculator();
+     cal1.add(10);
+     cal1.minus(3);
+     System.out.println(cal1.getValue());  // 10에서 3을 뺀 7을 출력
   }
 }

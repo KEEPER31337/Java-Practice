@@ -11,4 +11,5 @@ public class Q06 {
     cal.add(3);  // 여기서 NullPointerException 이 발생한다.
     System.out.println(cal.getValue());
   }
+
 }

@@ -15,5 +15,7 @@ public class Q05 {
     ArrayList<Integer> b = a;
     a.add(4);
     System.out.println(b.size());
+
+    // 원래 3개였다가 add 메서드로 하나 추가했으니깐.
   }
 }

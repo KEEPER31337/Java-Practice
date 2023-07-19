@@ -10,11 +10,11 @@ public class Q09 {
     Lion b = new Lion();
     Predator c = new Lion();
 
-    //  System.out.println(a.hello());  // 1번
-    //  System.out.println(a.bark());   // 2번
-    //  System.out.println(b.hello());  // 3번
-    //  System.out.println(b.bark());   // 4번
-    //  System.out.println(c.hello());  // 5번
-    //  System.out.println(c.bark());   // 6번
+      System.out.println(a.hello());  // 1번
+//      System.out.println(a.bark());   // 2번: animal클래스에는 bark method가 없다.
+      System.out.println(b.hello());  // 3번
+      System.out.println(b.bark());   // 4번
+//      System.out.println(c.hello());  // 5번: Predator타입은 method가 bark만 가능하다.
+      System.out.println(c.bark());   // 6번
   }
 }

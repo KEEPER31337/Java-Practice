@@ -10,6 +10,14 @@ public class Q01 {
     cal.add(10);
     System.out.println(cal.getValue());  // 10 출력
 
+    cal.sub(3);
+    System.out.println(cal.getValue());
+
+    UpgradeCalculator newCal = new UpgradeCalculator();
+    newCal.add(20);
+    System.out.println(newCal.getValue());
+    newCal.sub(3);
+    System.out.println(newCal.getValue());
     // TODO: Calculator 클래스를 상속하는 UpgradeCalculator를 만들고 값을 뺄 수 있는 minus 메서드를 추가해 보자.
     /** 다음과 같이 동작하는 클래스를 만들어야 한다.
      *

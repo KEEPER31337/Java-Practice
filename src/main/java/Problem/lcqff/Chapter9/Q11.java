@@ -1,9 +1,30 @@
 package Problem.lcqff.Chapter9;
 
+import java.util.Scanner;
+
 public class Q11 { // DashInsert
 
-  public static void main(String[] args) {
+  public static boolean isEven(int n) {
+    return n%2==0;
+  }
+  public static String DashInsert(String str) {
+    str = str + " ";
+    String res = "";
+    for (int i=1; i<str.length(); i++) {
+      if (isEven(str.charAt(i-1)) && isEven(str.charAt(i)))
+        res = res + str.charAt(i-1) + "*";
+      else if (!isEven(str.charAt(i-1)) && !isEven(str.charAt(i)))
+        res = res + str.charAt(i-1) + "-";
+      else res = res+str.charAt(i-1);
+    }
+    return res;
+  }
 
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    String str = scanner.next();
+    System.out.println(DashInsert(str));
   }
 
   /**

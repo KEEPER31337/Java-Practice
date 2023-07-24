@@ -15,12 +15,12 @@ public class Q10 { // 오류에 상관없이 모두 수행하기
 
   public static void main(String[] args) {
     Random r = new Random();
-    try {
-      for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++) {
+      try {
         execute(r.nextInt(10));
+      } catch (OddException e) {
+        // e.printStackTrace();
       }
-    } catch (OddException e) {
-      e.printStackTrace();
     }
   }
 

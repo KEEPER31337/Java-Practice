@@ -1,5 +1,7 @@
 package Problem.lcqff.Chapter9;
 
+import java.util.Scanner;
+
 public class Q5 { // 한 줄 구구단
 
   /**
@@ -12,7 +14,13 @@ public class Q5 { // 한 줄 구구단
    */
 
   public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("구구단을 출력할 숫자를 입력하세요(2~9): ");
+    int num = scanner.nextInt();
 
+    for (int i=1; i<=9; i++) {
+      System.out.print(num*i+" ");
+    }
   }
 
 }

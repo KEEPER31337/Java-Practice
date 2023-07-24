@@ -1,6 +1,7 @@
 package Problem.lcqff.Chapter9;
 
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Q2 { // 맵에서 값 추출하기
 
@@ -9,7 +10,11 @@ public class Q2 { // 맵에서 값 추출하기
     HashMap<String, Integer> a = new HashMap<>();
     a.put("A", 90);
     a.put("B", 80);
-    System.out.println(a.get("C"));  // null 출력
+
+    System.out.println("알파벳을 입력하시오");
+    Scanner scanner = new Scanner(System.in);
+    char ch = scanner.nextLine().charAt(0);
+    System.out.println(a.containsKey(ch) ? a.get("C") : 90 - ((int) ch - 65) * 10);
 
 
     // TODO: a 맵에는 'C'라는 key가 없으므로 위처럼 null이 출력된다. 'C'에 해당하는 key 값이 없을 경우 null 대신 70을 얻을 수 있도록 수정하시오.

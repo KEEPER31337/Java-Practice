@@ -1,5 +1,8 @@
 package Problem.lcqff.Chapter9;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Q6 { // 입력 숫자의 총합 구하기
 
   /**
@@ -8,7 +11,16 @@ public class Q6 { // 입력 숫자의 총합 구하기
    * 65,45,2,3,45,8
    */
   public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    ArrayList<Integer> nums = new ArrayList<Integer>();
+    while (true) {
+      System.out.print("숫자를 입력하세요(Type 'exit' to quit): ");
+      String res = scanner.next();
+      if (res.equals("exit")) break;
+      nums.add(Integer.parseInt(res));
+    }
 
+    System.out.println(nums.stream().reduce(0,(res,num) ->{return res+num;}));
   }
 
 }

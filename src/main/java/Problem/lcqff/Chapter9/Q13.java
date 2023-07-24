@@ -1,8 +1,46 @@
 package Problem.lcqff.Chapter9;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.stream.Stream;
+
+import static java.lang.Integer.parseInt;
+
 public class Q13 { // Duplicate Numbers
 
+  public static boolean checkContainsAll(String str) {
+    Set<Integer> set = new HashSet<>();
+    for (int i = 0; i <= 9; i++) {
+      set.add(i);
+    }
+
+    Stream arr = Arrays.stream(str.split("")).map(num -> parseInt(num));
+    if (arr.toList().containsAll(set)) {
+      return true;
+    }
+    else return false;
+  }
+
+  public static boolean checkNoDup(String str) {
+    Set<Character> set = new HashSet<>();
+    for (char c : str.toCharArray()) {
+      if (!set.add(c)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+
   public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    String[] strArr = scanner.nextLine().split(" ");
+
+    for (String str:strArr) {
+      System.out.print((checkNoDup(str) && checkContainsAll(str))+" ");
+    }
 
   }
 

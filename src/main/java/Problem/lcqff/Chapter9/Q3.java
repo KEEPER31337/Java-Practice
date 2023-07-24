@@ -11,6 +11,7 @@ public class Q3 { // 50점 이상 점수의 총합 구하기
     int[] A = {20, 55, 67, 82, 45, 33, 90, 87, 100, 25};
 
     int over50 = Arrays.stream(A).filter(num -> num >= 50==true).sum();
+    System.out.println(over50);
   }
 
 }
